@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bukhari Fragrances — Premium Perfume Samples</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="notice">We Only Accept Advance Payments. &nbsp; <b>CASH ON DELIVERY is Not Available.</b> &nbsp; <span>FREE SHIPPING On Orders Above Rs.12,000</span><button id="closeNotice">×</button></div>
+<header>
+  <div class="topbar">
+    <button class="icon" id="menuBtn">☰</button>
+    <a class="logo" href="#home">BUKHARI<span>FRAGRANCES</span></a>
+    <div class="header-actions">
+      <button class="icon" id="searchBtn" title="Search">⌕</button>
+      <button class="icon" id="accountBtn" title="Account">♙</button>
+      <button class="cart-btn" id="cartBtn">Cart <b id="cartCount">0</b></button>
+    </div>
+  </div>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#shop">Shop</a>
+    <a href="#collection-men">Men</a><a href="#collection-women">Women</a>
+    <a href="#samples">Try Samples</a><a href="#about">About</a>
+  </nav>
+  <div class="searchbar" id="searchbar"><input id="searchInput" placeholder="Search fragrances, brands..."><button id="doSearch">Search</button></div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">AUTHENTIC FRAGRANCE • TEST BEFORE YOU BUY</p>
+    <h1>Find Your<br><em>Signature Scent</em></h1>
+    <p>Explore premium perfume samples from iconic fragrance houses. Discover your next signature scent before you invest in a full bottle.</p>
+    <a class="btn dark" href="#shop">Shop Fragrances</a>
+  </div>
+  <div class="hero-bottle"><div class="bottle"><span>BF</span><small>EAU DE PARFUM</small></div></div>
+</section>
+
+<section class="intro" id="samples">
+  <p class="eyebrow">TRY BEFORE YOU BUY</p><h2>Find the fragrance that fits you.</h2>
+  <p>Bukhari Fragrances offers perfume samples so you can explore before you invest.</p>
+  <div class="collection-cards">
+    <a href="#collection-men" class="collection"><div class="visual men"></div><div><h3>MEN'S SAMPLES</h3><span>Explore Collection →</span></div></a>
+    <a href="#collection-women" class="collection"><div class="visual women"></div><div><h3>WOMEN'S SAMPLES</h3><span>Explore Collection →</span></div></a>
+  </div>
+</section>
+
+<section class="products-section" id="shop">
+  <div class="section-head"><div><p class="eyebrow">SPECIAL DISCOUNT</p><h2>Featured Fragrances</h2></div><a href="#all-products">View All →</a></div>
+  <div class="product-grid" id="featuredGrid"></div>
+</section>
+
+<section class="dark-banner">
+  <div><p class="eyebrow">AUTHENTICITY GUARANTEED</p><h2>100% Original Perfumes Only.</h2><p>No fakes — only originals.</p></div>
+  <div class="seal">100%<small>ORIGINAL</small></div>
+</section>
+
+<section class="products-section" id="all-products">
+  <div class="section-head"><div><p class="eyebrow">NEW ARRIVAL</p><h2>Latest Arrivals</h2></div></div>
+  <div class="toolbar"><select id="sort"><option value="featured">Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="name">Name</option></select><span id="resultCount"></span></div>
+  <div class="product-grid" id="allGrid"></div>
+</section>
+
+<section class="reviews">
+  <p class="eyebrow">CUSTOMER LOVE</p><h2>Let customers speak for us</h2><div class="review-grid">
+  <article><div class="stars">★★★★★</div><p>“100 percent authentic products love it.”</p><b>Muhammad Abdullah</b><small>04/26/2026</small></article>
+  <article><div class="stars">★★★★★</div><p>“Great experience. Packaging was neat and secure. Highly satisfied!”</p><b>Hanzlabukhari</b><small>04/27/2026</small></article>
+  <article><div class="stars">★★★★★</div><p>“100% Original Perfume. Highly Recommended ❤️”</p><b>Muhammad Naeem</b><small>04/27/2026</small></article>
+  <article><div class="stars">★★★★★</div><p>“Superb.”</p><b>Jamil Ahmed</b><small>08/20/2026</small></article>
+  </div></section>
+</main>
+
+<footer id="about"><div><div class="footer-logo">BUKHARI FRAGRANCES</div><p>Premium fragrance samples and original perfumes.</p></div>
+<div><h4>NEED HELP?</h4><a href="mailto:info@bukharifragrances.pk">Contact</a><a href="#">Shipping Policy</a><a href="#">Refund Policy</a></div>
+<div><h4>TRY SAMPLES</h4><a href="#collection-men">For Him</a><a href="#collection-women">For Her</a></div>
+<div><h4>PAYMENT</h4><p>Advance payment only.<br>Free shipping above Rs.12,000.</p></div>
+<div class="copyright">© 2026 Bukhari Fragrances. Demo recreation for development use.</div></footer>
+
+<div class="drawer" id="cartDrawer"><div class="drawer-panel"><div class="drawer-head"><h2>Your Cart</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-summary"><div><span>Subtotal</span><b id="subtotal">Rs.0</b></div><p id="shippingNote"></p><button class="btn dark full" id="checkoutBtn">Proceed to Checkout</button></div></div></div>
+
+<div class="modal" id="checkoutModal"><div class="modal-box"><button class="modal-close" id="closeCheckout">×</button><p class="eyebrow">CHECKOUT</p><h2>Complete Your Order</h2><p class="muted">Advance payment only. COD is not available.</p><form id="checkoutForm"><input required name="name" placeholder="Full name"><input required name="phone" placeholder="Phone number"><input required name="address" placeholder="Complete delivery address"><input name="city" placeholder="City"><textarea name="notes" placeholder="Order notes (optional)"></textarea><div class="order-total">Order Total <b id="checkoutTotal">Rs.0</b></div><button class="btn dark full">Place Order</button></form><div id="orderSuccess" class="success" hidden></div></div></div>
+
+<script>window.PRODUCTS = [{"id": 1, "name": "TK 4 - Thomas Kosmala", "brand": "Thomas Kosmala", "p5": 1500, "p10": 2900, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=1", "tags": ["Tester", "Authentic"]}, {"id": 2, "name": "Office For Men - Fragrance One", "brand": "Fragrance One", "p5": 1500, "p10": 2950, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=2", "tags": ["Tester", "Authentic"]}, {"id": 3, "name": "Stronger With You Intensely", "brand": "Emporio Armani", "p5": 1850, "p10": 3600, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=3", "tags": ["Tester", "Authentic"]}, {"id": 4, "name": "Gentleman Reserve Privee", "brand": "Givenchy", "p5": 1800, "p10": 3500, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=4", "tags": ["Tester", "Authentic"]}, {"id": 5, "name": "Cedrat Boise Intense EDP", "brand": "Mancera", "p5": 1550, "p10": 3000, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=5", "tags": ["Tester", "Authentic"]}, {"id": 6, "name": "Black Afgano Extrait", "brand": "Nasomatto", "p5": 6200, "p10": 12000, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=6", "tags": ["Tester", "Authentic"]}, {"id": 7, "name": "Imagination", "brand": "Louis Vuitton", "p5": 6200, "p10": 12000, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=7", "tags": ["Tester", "Authentic"]}, {"id": 8, "name": "Ombre Leather EDP", "brand": "Tom Ford", "p5": 2500, "p10": 4900, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=8", "tags": ["Tester", "Authentic"]}, {"id": 9, "name": "Uomo Born In Roma Coral Fantasy", "brand": "Valentino", "p5": 2300, "p10": 4500, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=9", "tags": ["Tester", "Authentic"]}, {"id": 10, "name": "Hacivat Extrait", "brand": "Nishane", "p5": 2800, "p10": 5500, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=10", "tags": ["Tester", "Authentic"]}, {"id": 11, "name": "Greenley", "brand": "Parfums de Marly", "p5": 3050, "p10": 6000, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=11", "tags": ["Tester", "Authentic"]}, {"id": 12, "name": "Gris Charnel EXTRAIT", "brand": "BDK Parfums", "p5": 3500, "p10": 6900, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=12", "tags": ["Tester", "Authentic"]}, {"id": 13, "name": "Vibrato EDP", "brand": "Sospiro", "p5": 3300, "p10": 6500, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=13", "tags": ["Tester", "Authentic"]}, {"id": 14, "name": "Haltane", "brand": "Parfums de Marly", "p5": 3500, "p10": 6900, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=14", "tags": ["Tester", "Authentic"]}, {"id": 15, "name": "YSL Libre EDP Intense", "brand": "Yves Saint Laurent", "p5": 2800, "p10": 5500, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=15", "tags": ["Tester", "Authentic"]}, {"id": 16, "name": "Vanilla 28", "brand": "KAYALI", "p5": 3100, "p10": 6000, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=16", "tags": ["Tester", "Authentic"]}, {"id": 17, "name": "Alezz Oud", "brand": "Hersh Lahab", "p5": 1550, "p10": 3000, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=17", "tags": ["Tester", "Authentic"]}, {"id": 18, "name": "Musamam Black Intense", "brand": "Lattafa", "p5": 850, "p10": 1600, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=18", "tags": ["Tester", "Authentic"]}, {"id": 19, "name": "Dior Homme Parfum 2025", "brand": "Dior", "p5": 3500, "p10": 6900, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=19", "tags": ["Tester", "Authentic"]}, {"id": 20, "name": "Bois Imperial Extrait", "brand": "Essential Parfums", "p5": 6600, "p10": 13000, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=20", "tags": ["Tester", "Authentic"]}, {"id": 21, "name": "Oud Satin Mood EDP", "brand": "Maison Francis Kurkdjian", "p5": 4800, "p10": 9500, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=21", "tags": ["Tester", "Authentic"]}, {"id": 22, "name": "Erba Pura", "brand": "Xerjoff", "p5": 3300, "p10": 6500, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=22", "tags": ["Tester", "Authentic"]}, {"id": 23, "name": "Power Of You", "brand": "Emporio Armani", "p5": 3000, "p10": 5900, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=23", "tags": ["Tester", "Authentic"]}, {"id": 24, "name": "Cuir", "brand": "Al Majed Oud", "p5": 850, "p10": 1600, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=24", "tags": ["Tester", "Authentic"]}, {"id": 25, "name": "Mavro", "brand": "Gissah", "p5": 1100, "p10": 2100, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=25", "tags": ["Tester", "Authentic"]}, {"id": 26, "name": "Al Noor", "brand": "Arabiyat Prestige", "p5": 1050, "p10": 2000, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=26", "tags": ["Tester", "Authentic"]}, {"id": 27, "name": "Mahd Al Dhahab", "brand": "Arabiyat Prestige", "p5": 1050, "p10": 2000, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=27", "tags": ["Tester", "Authentic"]}, {"id": 28, "name": "Naxos", "brand": "Xerjoff", "p5": 3300, "p10": 6500, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=28", "tags": ["Tester", "Authentic"]}, {"id": 29, "name": "Dior Homme Intense EDP", "brand": "Dior", "p5": 2400, "p10": 4700, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=29", "tags": ["Tester", "Authentic"]}, {"id": 30, "name": "Marj", "brand": "Ahmed Al Maghribi", "p5": 1350, "p10": 2650, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=30", "tags": ["Tester", "Authentic"]}, {"id": 31, "name": "Most Wanted EDP Intense", "brand": "Azzaro", "p5": 1600, "p10": 3100, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=31", "tags": ["Tester", "Authentic"]}, {"id": 32, "name": "AHL", "brand": "Ahmed Al Maghribi", "p5": 1300, "p10": 2600, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=32", "tags": ["Tester", "Authentic"]}, {"id": 33, "name": "Tam Dao EDP", "brand": "Diptyque", "p5": 4800, "p10": 9500, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=33", "tags": ["Tester", "Authentic"]}, {"id": 34, "name": "Uomo Born in Roma Intense", "brand": "Valentino", "p5": 2300, "p10": 4500, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=34", "tags": ["Tester", "Authentic"]}, {"id": 35, "name": "Durra", "brand": "The Spirit Of Dubai", "p5": 11000, "p10": 21900, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=35", "tags": ["Tester", "Authentic"]}, {"id": 36, "name": "Absolu Aventus", "brand": "Creed", "p5": 7500, "p10": 14900, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=36", "tags": ["Tester", "Authentic"]}, {"id": 37, "name": "Le Sel d\u2019Issey EDT", "brand": "Issey Miyake", "p5": 2000, "p10": 3900, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=37", "tags": ["Tester", "Authentic"]}, {"id": 38, "name": "Hundred Silent Ways Extrait", "brand": "Nishane", "p5": 2800, "p10": 5500, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=38", "tags": ["Tester", "Authentic"]}, {"id": 39, "name": "Montabaco Intensivo", "brand": "Ormonde Jayne", "p5": 3800, "p10": 7500, "category": "Women", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=39", "tags": ["Tester", "Authentic"]}, {"id": 40, "name": "Ombre Nomade", "brand": "Louis Vuitton", "p5": 6600, "p10": 13000, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=40", "tags": ["Tester", "Authentic"]}, {"id": 41, "name": "Megamare", "brand": "Orto Parisi", "p5": 5200, "p10": 10000, "category": "Men", "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=85&sig=41", "tags": ["Tester", "Authentic"]}];</script>
+<script src="app.js"></script>
+</body></html>
